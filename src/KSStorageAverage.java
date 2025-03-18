@@ -1,5 +1,6 @@
+// Lớp lưu trữ cho chức năng tính trung bình hóa đơn
 public class KSStorageAverage {
-	public void averageHoaDonTheoThang(int thang) {
-		System.out.println("Tính trung bình thành công.");
-	}
+    public double averageHoaDonTheoThang(int thang) {
+        return MemoryKSDB.averageHoaDonTheoThang(thang); // Tính trung bình từ cơ sở dữ liệu
+    }
 }

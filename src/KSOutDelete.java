@@ -1,13 +1,19 @@
 import java.io.PrintWriter;
 
+// Lớp đầu ra cho chức năng xóa đặt phòng
 public class KSOutDelete {
-	private PrintWriter out;
+    private PrintWriter out;
 
-	public KSOutDelete(PrintWriter out) {
-		this.out = out;
-	}
+    public KSOutDelete(PrintWriter out) {
+        this.out = out;
+    }
 
-	public void printDelete() {
-		out.println("Xóa đã hoàn tất!");
-	}
+    public void printDelete(boolean success, int maDatPhong) {
+        if (success) {
+            out.println("Đã xóa thành công đặt phòng với mã: " + maDatPhong);
+        } else {
+            out.println("Không tìm thấy đặt phòng với mã: " + maDatPhong);
+        }
+        out.flush();
+    }
 }

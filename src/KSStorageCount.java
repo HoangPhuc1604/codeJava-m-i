@@ -1,5 +1,6 @@
+// Lớp lưu trữ cho chức năng đếm đặt phòng
 public class KSStorageCount {
-	public void countDatPhong() {
-		System.out.println("Tính tổng số lượng thành công.");
-	}
+    public int countDatPhong() {
+        return MemoryKSDB.countDatPhong(); // Đếm số lượng đặt phòng từ cơ sở dữ liệu
+    }
 }
