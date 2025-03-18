@@ -2,14 +2,14 @@ import java.io.PrintWriter;
 
 // Lớp điều khiển cho chức năng tìm kiếm đặt phòng
 public class KSControlSearch {
-    private PrintWriter out;
-    private KSStorageSearch ksStorageSearch;
-    private KSOutSearch ksOutSearch;
-
+    PrintWriter out;
+    KSStorageSearch ksStorageSearch;
+    KSOutSearch ksOutSearch;
+    
     public KSControlSearch(PrintWriter out) {
-        this.out = out;
-        this.ksStorageSearch = new KSStorageSearch();
-        this.ksOutSearch = new KSOutSearch(out);
+        out = out;
+        ksStorageSearch = new KSStorageSearch();
+        ksOutSearch = new KSOutSearch(out);
     }
 
     // Phương thức tìm kiếm đặt phòng theo mã

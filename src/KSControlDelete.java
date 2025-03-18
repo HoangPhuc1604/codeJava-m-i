@@ -2,14 +2,14 @@ import java.io.PrintWriter;
 
 // Lớp điều khiển cho chức năng xóa đặt phòng
 public class KSControlDelete {
-    private PrintWriter out;
-    private KSStorageDelete ksStorageDelete;
-    private KSOutDelete ksOutDelete;
+    PrintWriter out;
+    KSStorageDelete ksStorageDelete;
+    KSOutDelete ksOutDelete;
 
     public KSControlDelete(PrintWriter out) {
-        this.out = out;
-        this.ksStorageDelete = new KSStorageDelete();
-        this.ksOutDelete = new KSOutDelete(out);
+        out = out;
+        ksStorageDelete = new KSStorageDelete();
+        ksOutDelete = new KSOutDelete(out);
     }
 
     // Phương thức xóa đặt phòng theo mã

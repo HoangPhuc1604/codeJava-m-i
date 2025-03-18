@@ -2,13 +2,13 @@ import java.io.PrintWriter;
 
 // Lớp đầu ra cho chức năng cập nhật đặt phòng
 public class KSOutUpdate {
-    private PrintWriter out;
+    PrintWriter out;
 
     public KSOutUpdate(PrintWriter out) {
         this.out = out;
     }
 
-    public void printUpdate(boolean success, int maDatPhong) {
+    void printUpdate(boolean success, int maDatPhong) {
         if (success) {
             out.println("Đã cập nhật thành công đặt phòng với mã: " + maDatPhong);
         } else {
